@@ -15,3 +15,16 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+	
+	
+	
+	if Input.is_action_just_pressed("disparar"):
+		dispara()
+	
+	
+func dispara():
+	var escena_bala = preload("res://bala.tscn")
+	var nova_bala = escena_bala.instance()
+	nova_bala.global_position = $Position2D.global_position
+	nova_bala.direccio = global_position.direction_to(get_global_mouse_position())
+	Global.bales.add_child(nova_bala)
