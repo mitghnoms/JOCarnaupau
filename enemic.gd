@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var move = Vector2.ZERO
 var velocitat = 150
-var vides = 5
+var vides = 3
 
 func _physics_process(delta):
 	
