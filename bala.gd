@@ -8,9 +8,12 @@ var velocitat = direccio *500
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	velocitat = direccio * 500
-	$Sprite.rotation = velocitat.angle()
+	$animsprite.rotation = velocitat.angle()
 func _process(delta):
 	position += velocitat * delta
 
 
 
+func _on_bala_body_entered(body):
+	queue_free()
+	
