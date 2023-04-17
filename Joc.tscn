@@ -870,7 +870,7 @@ tile_set = SubResource( 2 )
 format = 1
 tile_data = PoolIntArray( 1376282, 0, 0, 1441818, 0, 0, 1507356, 2, 0, 1507357, 2, 0, 1769490, 1, 0 )
 
-[node name="perosnatge" parent="." instance=ExtResource( 2 )]
+[node name="personatge" parent="." instance=ExtResource( 2 )]
 position = Vector2( 503, 289 )
 
 [node name="enemic" parent="." instance=ExtResource( 5 )]
