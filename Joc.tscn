@@ -1919,6 +1919,7 @@ tile_set = SubResource( 4 )
 format = 1
 tile_data = PoolIntArray( 1376275, 4, 0, 1507349, 1, 0, 1507350, 0, 0, 1703958, 1610612741, 0, 1703960, 1610612739, 0, 1769498, 4, 0 )
 
+<<<<<<< HEAD
 [node name="TileMap5" type="TileMap" parent="."]
 position = Vector2( -6251.92, 5375.85 )
 rotation = 0.785397
@@ -2006,8 +2007,22 @@ tile_data = PoolIntArray( 1376275, 4, 0, 1507349, 1, 0, 1507350, 0, 0, 1703958, 
 [node name="personatge" parent="." instance=ExtResource( 2 )]
 position = Vector2( 503, 289 )
 
+=======
+>>>>>>> e6bd3cb40706422ef572d89dd3350b9e7cb31c35
 [node name="enemic" parent="." instance=ExtResource( 5 )]
 position = Vector2( 181, 347 )
 
+[node name="personatge" parent="." instance=ExtResource( 2 )]
+position = Vector2( 666, 276 )
+
 [node name="bales" type="Node2D" parent="."]
 script = ExtResource( 4 )
+
+[node name="enemic2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 546, 832 )
+
+[node name="enemic3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1543, 424 )
+
+[node name="enemic4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 629, -89 )
