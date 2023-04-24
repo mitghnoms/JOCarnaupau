@@ -1791,10 +1791,10 @@ position = Vector2( 666, 276 )
 script = ExtResource( 4 )
 
 [node name="enemic2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 546, 832 )
+position = Vector2( 37, 346 )
 
 [node name="enemic3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1543, 424 )
+position = Vector2( 117, 345 )
 
 [node name="enemic4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 629, -89 )
+position = Vector2( -27, 347 )
