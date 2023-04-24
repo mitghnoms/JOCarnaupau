@@ -17,6 +17,20 @@ func _on_hitbox_area_entered(area):
 			vides -= 1
 	if vides == 0:
 		queue_free()
+	
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 #func _moure(body):
 #				moviment = position.direction_to(body.global_position)
 #				var dir = body.position - position

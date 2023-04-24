@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Joc.gd" type="Script" id=1]
 [ext_resource path="res://personatge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://spritesheet_tiles.png" type="Texture" id=3]
 [ext_resource path="res://bales.gd" type="Script" id=4]
 [ext_resource path="res://enemic.tscn" type="PackedScene" id=5]
+[ext_resource path="res://spawn.gd" type="Script" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "spritesheet_tiles.png 0"
@@ -1790,11 +1791,6 @@ position = Vector2( 666, 276 )
 [node name="bales" type="Node2D" parent="."]
 script = ExtResource( 4 )
 
-[node name="enemic2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 546, 832 )
-
-[node name="enemic3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1568, 432 )
-
-[node name="enemic4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 629, -89 )
+[node name="spawn" type="Position2D" parent="."]
+position = Vector2( 418, 46 )
+script = ExtResource( 6 )
