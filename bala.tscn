@@ -31,7 +31,7 @@ animations = [ {
 radius = 4.0
 height = 16.0
 
-[node name="bala" type="Area2D"]
+[node name="bala" type="Area2D" groups=["bales"]]
 script = ExtResource( 1 )
 
 [node name="animsprite" type="AnimatedSprite" parent="."]
