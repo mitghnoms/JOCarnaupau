@@ -53,7 +53,7 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 38, 19 )
+position = Vector2( 43, 19 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
