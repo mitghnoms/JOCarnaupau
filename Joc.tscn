@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://Joc.gd" type="Script" id=1]
 [ext_resource path="res://personatge.tscn" type="PackedScene" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Spawns.gd" type="Script" id=8]
 [ext_resource path="res://enemicgran.tscn" type="PackedScene" id=9]
 [ext_resource path="res://mapa.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Label.gd" type="Script" id=11]
+[ext_resource path="res://Kenney Future Narrow.ttf" type="DynamicFontData" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -1103,6 +1105,10 @@ points = PoolVector2Array( 8.198, 10, 54.198, 11, 56.198, 40, 33.198, 53, 10.198
 5/shapes = [  ]
 5/z_index = 0
 
+[sub_resource type="DynamicFont" id=38]
+size = 40
+font_data = ExtResource( 12 )
+
 [node name="Joc" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -2153,3 +2159,11 @@ position = Vector2( 5136, -454 )
 
 [node name="enemicgran" parent="." instance=ExtResource( 9 )]
 position = Vector2( 202, 54 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_right = 91.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 38 )
+script = ExtResource( 11 )
