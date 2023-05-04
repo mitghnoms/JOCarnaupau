@@ -777,10 +777,10 @@
 script = ExtResource( 1 )
 
 [node name="Color Verd" type="ColorRect" parent="."]
-margin_left = -8901.0
-margin_top = -6529.0
-margin_right = 9920.0
-margin_bottom = 5834.0
+margin_left = -20922.0
+margin_top = -14020.0
+margin_right = 20008.0
+margin_bottom = 16345.0
 color = Color( 0.152941, 0.682353, 0.376471, 1 )
 
 [node name="TileMap" parent="." instance=ExtResource( 10 )]

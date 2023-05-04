@@ -2,13 +2,13 @@ extends KinematicBody2D
 
 var moviment = Vector2()
 var s = 100
-var vides = 50
+var vides = 10
 onready var personatge = get_tree().get_root().get_node("Joc/personatge")
 func _process(delta):
-	moviment = position.direction_to(personatge.global_position)
-	var dir = personatge.position - position
-	get_node("AnimatedSprite").rotation = dir.angle()
-	moviment = move_and_slide(moviment * s)
+	var dir = global_position.direction_to(personatge.global_position)
+
+	$AnimatedSprite.rotation = dir.angle() + deg2rad(90)
+	moviment = move_and_slide(dir * s)
 
 func _on_hitbox_area_entered(area:Area2D):
 	if area.is_in_group("bales"):
