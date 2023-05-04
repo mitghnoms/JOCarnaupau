@@ -4,8 +4,8 @@ extends Node2D
 #var punts = 25
 #
 ## Called when the node enters the scene tree for the first time.
-#func _ready():
-#	punts = 2
+func _ready():
+	Global.punts = 0
 #
 #	var punts_max = llegeix_punts()
 #	if punts > punts_max:

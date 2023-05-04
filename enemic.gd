@@ -17,6 +17,7 @@ func _on_hitbox_area_entered(area:Area2D):
 			var nombre_spawns = Global.Spawns.get_child_count()
 			for i in range(2):
 				Global.Spawns.get_child(randi() % nombre_spawns).creazombie()
+			Global.punts += 1
 			queue_free()
 		
 
