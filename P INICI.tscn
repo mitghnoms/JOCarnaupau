@@ -1,25 +1,25 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://YOUR END.png" type="Texture" id=1]
+[ext_resource path="res://zyro-image (1).png" type="Texture" id=1]
 [ext_resource path="res://Kenney Pixel Square.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://P INICI.gd" type="Script" id=3]
 [ext_resource path="res://INSTRUCCIONS.gd" type="Script" id=4]
 [ext_resource path="res://JUGAR.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 200
 outline_color = Color( 0.929412, 0.0823529, 0.0823529, 1 )
 use_filter = true
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 10
+size = 50
 outline_color = Color( 0.027451, 0.00784314, 0.00784314, 1 )
 font_data = ExtResource( 2 )
 
 [node name="P INICI" type="Sprite"]
 position = Vector2( 800, 424 )
-scale = Vector2( 2, 1.41333 )
+scale = Vector2( 0.5, 0.351666 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
 
@@ -28,21 +28,27 @@ anchor_left = 0.37
 anchor_top = 0.538
 anchor_right = 0.65
 anchor_bottom = 0.683
-margin_left = -400.0
-margin_top = -299.723
-margin_right = -400.0
-margin_bottom = -299.723
+margin_left = -1600.0
+margin_top = -1177.46
+margin_right = -1600.0
+margin_bottom = -1177.46
 script = ExtResource( 5 )
 
 [node name="ColorRect" type="ColorRect" parent="JUGAR"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 0.000244141
+margin_bottom = 0.000244141
 mouse_filter = 2
 color = Color( 0.764706, 0.592157, 0.34902, 1 )
 
 [node name="INICI" type="Label" parent="JUGAR"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -0.00012207
+margin_top = 0.00012207
+margin_right = -0.00012207
+margin_bottom = 255.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "JUGAR
@@ -55,23 +61,23 @@ anchor_left = 0.455
 anchor_top = 0.702
 anchor_right = 0.57
 anchor_bottom = 0.735
-margin_left = -400.0
-margin_top = -300.046
-margin_right = -400.0
-margin_bottom = -299.846
+margin_left = -1648.0
+margin_top = -1184.33
+margin_right = -1536.0
+margin_bottom = -1149.53
 script = ExtResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="INSTRUCCIONS"]
-margin_right = 92.0
-margin_bottom = 20.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0.556863, 0.431373, 0.254902, 1 )
 
 [node name="Label" type="Label" parent="INSTRUCCIONS/ColorRect"]
 anchor_right = 1.0
 anchor_bottom = 1.142
-margin_top = -0.230957
-margin_bottom = -3.07096
+margin_top = 0.00012207
+margin_bottom = -14.4839
 custom_colors/font_color = Color( 0.00784314, 0.00392157, 0.00392157, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "INSTRUCCIONS"
