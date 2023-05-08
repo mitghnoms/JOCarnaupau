@@ -4,6 +4,9 @@ export (int) var speed = 200
 
 var velocity = Vector2()
 
+func _ready():
+	Global.Personatge = self
+
 func get_input():
 	look_at(get_global_mouse_position())
 	velocity = Vector2()
