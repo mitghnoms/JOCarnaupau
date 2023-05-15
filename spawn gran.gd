@@ -18,5 +18,5 @@ func _on_Timer_timeout():
 	var escena_enemic_gran = preload("res://enemicgran.tscn")
 	var nou_enemic = escena_enemic_gran.instance()
 	var angle_atzar = rand_range(0,360)
-	nou_enemic.global_position = Global.Personatge.global_position + (Vector2.RIGHT * 1000).rotated( deg2rad(angle_atzar))
+	nou_enemic.global_position = Global.Personatge.global_position + (Vector2.RIGHT * 2000).rotated( deg2rad(angle_atzar))
 	add_child(nou_enemic)

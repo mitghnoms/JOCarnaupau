@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Joc.gd" type="Script" id=1]
 [ext_resource path="res://personatge.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Label.gd" type="Script" id=11]
 [ext_resource path="res://Kenney Future Narrow.ttf" type="DynamicFontData" id=12]
 [ext_resource path="res://skull.png" type="Texture" id=13]
+[ext_resource path="res://crown_a.png" type="Texture" id=14]
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -1110,6 +1111,12 @@ points = PoolVector2Array( 8.198, 10, 54.198, 11, 56.198, 40, 33.198, 53, 10.198
 size = 40
 font_data = ExtResource( 12 )
 
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 10059, 1132 )
+
+[sub_resource type="RectangleShape2D" id=40]
+extents = Vector2( 1986.5, 8155.5 )
+
 [node name="Joc" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -2172,7 +2179,7 @@ custom_fonts/font = SubResource( 38 )
 script = ExtResource( 11 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 72, 48 )
+position = Vector2( 65, 52 )
 scale = Vector2( 0.609375, 0.570313 )
 texture = ExtResource( 13 )
 
@@ -2183,5 +2190,43 @@ script = ExtResource( 9 )
 [node name="Timer" type="Timer" parent="spawn gran"]
 wait_time = 300.0
 autostart = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 476, 8730 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 39 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 11356.5, 497.5 )
+shape = SubResource( 40 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 476, 8730 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 144, -15400 )
+shape = SubResource( 39 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( -10376, 1121 )
+shape = SubResource( 40 )
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+margin_left = 128.0
+margin_top = 120.0
+margin_right = 212.0
+margin_bottom = 156.0
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer2"]
+position = Vector2( 65, 133 )
+scale = Vector2( 0.65625, 0.640625 )
+texture = ExtResource( 14 )
 
 [connection signal="timeout" from="spawn gran/Timer" to="spawn gran" method="_on_Timer_timeout"]
