@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Joc.gd" type="Script" id=1]
 [ext_resource path="res://personatge.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Kenney Future Narrow.ttf" type="DynamicFontData" id=12]
 [ext_resource path="res://skull.png" type="Texture" id=13]
 [ext_resource path="res://crown_a.png" type="Texture" id=14]
+[ext_resource path="res://LabelMaxPunts.gd" type="Script" id=15]
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -2142,7 +2143,7 @@ format = 1
 tile_data = PoolIntArray( 1376275, 4, 0, 1507349, 1, 0, 1507350, 0, 0, 1703958, 1610612741, 0, 1703960, 1610612739, 0, 1769498, 4, 0 )
 
 [node name="enemic" parent="." instance=ExtResource( 5 )]
-position = Vector2( 181, 347 )
+position = Vector2( 129, 361 )
 
 [node name="personatge" parent="." instance=ExtResource( 2 )]
 position = Vector2( 666, 276 )
@@ -2223,6 +2224,8 @@ margin_left = 128.0
 margin_top = 120.0
 margin_right = 212.0
 margin_bottom = 156.0
+custom_fonts/font = SubResource( 38 )
+script = ExtResource( 15 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer2"]
 position = Vector2( 65, 133 )
