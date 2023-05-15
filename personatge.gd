@@ -4,6 +4,9 @@ export (int) var speed = 200
 
 var velocity = Vector2()
 
+func _ready():
+	Global.Personatge = self
+
 func get_input():
 	look_at(get_global_mouse_position())
 	velocity = Vector2()
@@ -34,4 +37,5 @@ func dispara():
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("enemic"):
 		$AnimatedSprite.play("mort")
+		get_tree().change_scene("res://TheEnd.tscn")
 		
