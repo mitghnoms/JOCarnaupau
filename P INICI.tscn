@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://zyro-image (1).png" type="Texture" id=1]
 [ext_resource path="res://Kenney Pixel Square.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://P INICI.gd" type="Script" id=3]
 [ext_resource path="res://INSTRUCCIONS.gd" type="Script" id=4]
 [ext_resource path="res://JUGAR.gd" type="Script" id=5]
+[ext_resource path="res://Música i Efectes de So/MúsicaInici.mp3" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
@@ -83,6 +84,11 @@ custom_fonts/font = SubResource( 2 )
 text = "INSTRUCCIONS"
 align = 1
 valign = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -12.38
+autoplay = true
 
 [connection signal="pressed" from="JUGAR" to="JUGAR" method="_on_JUGAR_pressed"]
 [connection signal="pressed" from="INSTRUCCIONS" to="INSTRUCCIONS" method="_on_INSTRUCCIONS_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Dispar.mp3-4f68d36e2edf3304261297e7c58e546f.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/Dispar.mp3"
+dest_files=[ "res://.import/Dispar.mp3-4f68d36e2edf3304261297e7c58e546f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Zombi.mp3-c1af92edb3f0b84c5c48e322f9ce9b0e.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/Zombi.mp3"
+dest_files=[ "res://.import/Zombi.mp3-c1af92edb3f0b84c5c48e322f9ce9b0e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

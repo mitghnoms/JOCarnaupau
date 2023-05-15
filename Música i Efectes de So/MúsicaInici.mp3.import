@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MúsicaInici.mp3-3cf70e20fc210b4cde7afcddf2d03fc0.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/MúsicaInici.mp3"
+dest_files=[ "res://.import/MúsicaInici.mp3-3cf70e20fc210b4cde7afcddf2d03fc0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -31,6 +31,7 @@ func dispara():
 	nova_bala.global_position = $Position2D.global_position
 	nova_bala.direccio = global_position.direction_to(get_global_mouse_position())
 	Global.bales.add_child(nova_bala)
+	$dispar.playing=true
 
 
 

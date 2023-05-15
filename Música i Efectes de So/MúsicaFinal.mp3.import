@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MúsicaFinal.mp3-57f2cf7d88dd1804724e6c2de4cc7995.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/MúsicaFinal.mp3"
+dest_files=[ "res://.import/MúsicaFinal.mp3-57f2cf7d88dd1804724e6c2de4cc7995.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
