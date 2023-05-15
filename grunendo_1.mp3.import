@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/grunendo_1.mp3-3f833771ff80cf89d4dca124e619418a.mp3str"
+
+[deps]
+
+source_file="res://grunendo_1.mp3"
+dest_files=[ "res://.import/grunendo_1.mp3-3f833771ff80cf89d4dca124e619418a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
