@@ -36,6 +36,6 @@ func llegeix_punts():
 		var max_punts = str2var(fitxer.get_as_text())
 		fitxer.close()
 	else:
-		max_punts = 0
+		max_punts = 150
 	return max_punts
 
