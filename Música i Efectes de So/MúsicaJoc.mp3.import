@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MúsicaJoc.mp3-654d4e59a89533e966e1f554721c2f2f.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/MúsicaJoc.mp3"
+dest_files=[ "res://.import/MúsicaJoc.mp3-654d4e59a89533e966e1f554721c2f2f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

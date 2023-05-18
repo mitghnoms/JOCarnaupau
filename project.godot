@@ -11,12 +11,16 @@ config_version=4
 [application]
 
 config/name="JOCarnaupau"
-run/main_scene="res://Joc.tscn"
+run/main_scene="res://P INICI.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://Global.gd"
+
+[display]
+
+window/size/fullscreen=true
 
 [gui]
 

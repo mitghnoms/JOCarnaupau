@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://hitman1_gun.png" type="Texture" id=1]
 [ext_resource path="res://personatge.gd" type="Script" id=2]
 [ext_resource path="res://hitman1_gun_-_copia-removebg-preview.png" type="Texture" id=3]
+[ext_resource path="res://Música i Efectes de So/Dispar.mp3" type="AudioStream" id=4]
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
@@ -53,7 +54,7 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 38, 19 )
+position = Vector2( 43, 19 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -62,5 +63,9 @@ position = Vector2( 1, 10 )
 shape = SubResource( 6 )
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="dispar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -11.143
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
